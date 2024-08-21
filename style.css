@@ -1,0 +1,69 @@
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+#game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+/* Board Styles */
+#board {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 2px;
+    width: 100%;
+}
+
+/* Square Styles */
+.square {
+    aspect-ratio: 1;
+    border: 1px solid #ccc;
+}
+
+.empty-square {
+    background-color: bisque;
+}
+
+.snake-square {
+    background-color: rgb(5, 54, 72);
+}
+
+.food-square {
+    background-color: rgb(6, 123, 18);
+}
+
+/* Info Styles */
+.board-info {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 10px;
+    font-size: 25px;
+}
+
+#start {
+    background-color: rgb(57, 103, 228);
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+/* Game Over Styles */
+#gameover {
+    display: none;
+    font-size: 30px;
+    text-align: center;
+    color: red;
+    margin-top: 10px;
+}
+
+
